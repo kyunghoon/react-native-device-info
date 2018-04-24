@@ -254,7 +254,7 @@ public class RNDeviceModule extends ReactContextBaseJavaModule {
       }
     }
 
-
+    /*
     try {
       if (Class.forName("com.google.android.gms.iid.InstanceID") != null) {
         constants.put("instanceId", com.google.android.gms.iid.InstanceID.getInstance(this.reactContext).getId());
@@ -262,6 +262,9 @@ public class RNDeviceModule extends ReactContextBaseJavaModule {
     } catch (ClassNotFoundException e) {
       constants.put("instanceId", "N/A: Add com.google.android.gms:play-services-gcm to your project.");
     }
+    */
+    constants.put("instanceId", "N/A: gcm removed, fcm not yet added");
+
     constants.put("serialNumber", Build.SERIAL);
     constants.put("deviceName", deviceName);
     constants.put("systemName", "Android");
